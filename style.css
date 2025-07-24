@@ -1,0 +1,123 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper utama */
+.todo-wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff00cc, 0 0 40px #333399;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid #ff00cc;
+}
+
+/* Judul dan Paragraf */
+.todo-wrapper h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #ff00cc;
+    margin-bottom: 10px;
+}
+
+.todo-wrapper p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+/* Input Text */
+#todo-entry-box {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #1f1f2e;
+    color: #fff;
+    border: 2px solid #00f0ff;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+#todo-entry-box:focus {
+    border-color: #ff00cc;
+}
+
+/* Tombol */
+.pretty-button {
+    background: linear-gradient(45deg, #ff00cc, #333399);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin: 5px 3px;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #ff00cc;
+}
+
+.pretty-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+/* List Styling */
+#todo-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-list li {
+    padding: 8px 10px;
+    font-size: 1em;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#todo-list li:hover {
+    background-color: rgba(255, 0, 204, 0.1);
+}
+
+/* Item yang sudah selesai */
+.completed {
+    text-decoration: line-through;
+    color: #00f0ff;
+}
+
+/* Kontainer tombol bawah */
+#control-wrapper {
+    text-align: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+/* Scrollbar (optional, biar cyberpunk juga) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#00f0ff, #ff00cc);
+    border-radius: 10px;
+}
